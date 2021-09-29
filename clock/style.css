@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+}
+
+#container{
+    color: cyan;
+    font-size: 320%;
+    text-align: center;
+    margin-top: 50vh;
+    letter-spacing: 2px;
+   
+}
