@@ -24,7 +24,11 @@ reset.addEventListener('click', zero)
 function zero() {
     count = 0
     container.textContent = count
-    if (container.innerHTML == 0) {
+    if (container.innerHTML > 0) {
+        container.style.color = 'green'
+    } else if (container.innerHTML < 0) {
+        container.style.color = 'red'
+    } else {
         container.style.color = 'black'
     }
 
@@ -40,6 +44,10 @@ function increment() {
 
     if (container.innerHTML > 0) {
         container.style.color = 'green'
+    } else if (container.innerHTML < 0) {
+        container.style.color = 'red'
+    } else {
+        container.style.color = 'black'
     }
 
 }
@@ -52,8 +60,12 @@ function decrement() {
     container.textContent = count
 
 
-    if (container.innerHTML < 0) {
+    if (container.innerHTML > 0) {
+        container.style.color = 'green'
+    } else if (container.innerHTML < 0) {
         container.style.color = 'red'
+    } else {
+        container.style.color = 'black'
     }
 
 }
